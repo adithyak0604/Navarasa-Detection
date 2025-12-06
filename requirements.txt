@@ -1,0 +1,5 @@
+opencv-python
+numpy
+tf-keras
+pytorch
+time
