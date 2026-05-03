@@ -62,13 +62,13 @@ The system recognizes the 9 classical Navarasa emotions:
 
 ```bash
 # Use default webcam (device 0)
-python final2.py
+python detect.py
 
 # Use specific camera device
-python final2.py 0
+python detect.py 0
 
 # Use IP camera stream
-python final2.py http://192.168.1.100:8080/video
+python detect.py http://192.168.1.100:8080/video
 ```
 
 #### Controls
@@ -80,10 +80,9 @@ python final2.py http://192.168.1.100:8080/video
 
 ```
 Navarasa 1/
-├── final2.py                              # Main emotion recognition script
-├── final1.py, final.py                    # Alternative implementations
+├── detect.py                              # Emotion recognition script
 ├── download_model.py                      # Script to download model from Hugging Face
-├── navarasa_emotion_model_split1.h5       # Pre-trained Keras model
+├── navarasa_emotion_model_split1.h5       # Pre-trained Keras model (If downloaded)
 ├── extracted_dataset/                     # Training dataset
 │   └── NAVRASA FACIAL EMOTION IMAGE DATA/
 │       ├── training/                      # Training images (9 emotions)
