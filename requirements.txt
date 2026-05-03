@@ -1,5 +1,22 @@
-opencv-python
-numpy
-tf-keras
-pytorch
-time
+# Core Computer Vision & Image Processing
+opencv-python>=4.8.0
+
+# Deep Learning Framework
+tensorflow>=2.13.0
+keras>=2.13.0
+
+# Numerical Computing
+numpy>=1.24.0
+
+# PyTorch (for alternative models)
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Optional: For GPU acceleration with TensorFlow
+# tensorflow[and-cuda]>=2.13.0
+
+# Optional: Additional utilities
+Pillow>=10.0.0        # Image processing
+matplotlib>=3.7.0     # Visualization
+scipy>=1.11.0         # Scientific computing
+scikit-learn>=1.3.0   # Machine learning utilities
