@@ -50,19 +50,25 @@ The system recognizes the 9 classical Navarasa emotions:
    pip install -r requirements.txt
    ```
 
+4. **Download the emotion model**
+   ```bash
+   python download_model.py
+   ```
+   This will download the pre-trained Navarasa emotion model from Hugging Face.
+
 ### Usage
 
 #### Basic Emotion Recognition (Display Only)
 
 ```bash
 # Use default webcam (device 0)
-python detect.py
+python final2.py
 
 # Use specific camera device
-python detect.py 0
+python final2.py 0
 
 # Use IP camera stream
-python detect.py http://192.168.1.100:8080/video
+python final2.py http://192.168.1.100:8080/video
 ```
 
 #### Controls
@@ -74,9 +80,10 @@ python detect.py http://192.168.1.100:8080/video
 
 ```
 Navarasa 1/
-├── detect.py                              # Main emotion recognition script
+├── final2.py                              # Main emotion recognition script
+├── final1.py, final.py                    # Alternative implementations
+├── download_model.py                      # Script to download model from Hugging Face
 ├── navarasa_emotion_model_split1.h5       # Pre-trained Keras model
-├── res10_300x300_ssd_iter_140000.caffemodel  # Face detection model
 ├── extracted_dataset/                     # Training dataset
 │   └── NAVRASA FACIAL EMOTION IMAGE DATA/
 │       ├── training/                      # Training images (9 emotions)
@@ -105,6 +112,7 @@ See `requirements.txt` for complete list. Key dependencies:
 - **TensorFlow** (`tensorflow`) - Deep learning framework for emotion model
 - **NumPy** (`numpy`) - Numerical computing
 - **PyTorch** (`torch`) - Alternative model support
+- **Hugging Face Hub** (`huggingface_hub`) - Model download from Hugging Face
 
 ## 📈 Model Details
 
