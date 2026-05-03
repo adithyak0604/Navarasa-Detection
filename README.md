@@ -49,8 +49,14 @@ The system recognizes the 9 classical Navarasa emotions:
    ```bash
    pip install -r requirements.txt
    ```
-
-4. **Download the emotion model**
+   
+4. **Download the training dataset (optional)**
+   ```bash
+   python kaggle.py
+   ```
+   This will download the Kaggle Navarasa FER dataset used for training and experimentation.
+   
+5. **Download the emotion model**
    ```bash
    python download_model.py
    ```
@@ -82,6 +88,7 @@ python detect.py http://192.168.1.100:8080/video
 Navarasa 1/
 ├── detect.py                              # Emotion recognition script
 ├── download_model.py                      # Script to download model from Hugging Face
+├──kaggle.py                               # Script to download the Kaggle training dataset
 ├── navarasa_emotion_model_split1.h5       # Pre-trained Keras model (If downloaded)
 ├── extracted_dataset/                     # Training dataset
 │   └── NAVRASA FACIAL EMOTION IMAGE DATA/
@@ -112,6 +119,7 @@ See `requirements.txt` for complete list. Key dependencies:
 - **NumPy** (`numpy`) - Numerical computing
 - **PyTorch** (`torch`) - Alternative model support
 - **Hugging Face Hub** (`huggingface_hub`) - Model download from Hugging Face
+- **KaggleHub** (`kagglehub`) - Download training dataset from Kaggle
 
 ## 📈 Model Details
 
