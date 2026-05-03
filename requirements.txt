@@ -17,6 +17,9 @@ torchvision>=0.15.0
 # Model Download from Hugging Face
 huggingface_hub>=0.20.0
 
+# Kaggle dataset downloader for training data
+kagglehub>=0.3.0
+
 # Optional: For GPU acceleration with TensorFlow
 # tensorflow[and-cuda]>=2.13.0
 
