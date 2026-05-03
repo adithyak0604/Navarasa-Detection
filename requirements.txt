@@ -1,3 +1,5 @@
+# Navarasa Emotion Recognition System - Python Dependencies
+
 # Core Computer Vision & Image Processing
 opencv-python>=4.8.0
 
@@ -11,6 +13,9 @@ numpy>=1.24.0
 # PyTorch (for alternative models)
 torch>=2.0.0
 torchvision>=0.15.0
+
+# Model Download from Hugging Face
+huggingface_hub>=0.20.0
 
 # Optional: For GPU acceleration with TensorFlow
 # tensorflow[and-cuda]>=2.13.0
