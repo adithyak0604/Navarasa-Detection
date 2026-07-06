@@ -156,14 +156,6 @@ See `requirements.txt` for complete list. Key dependencies:
 - Install CUDA Toolkit and cuDNN for GPU acceleration
 - For TensorFlow GPU: `pip install tensorflow[and-cuda]`
 
-## 📝 License
-
-[Add your license here]
-
-## 👥 Contributors
-
-[Add contributor information]
-
 ## 🔮 Future Enhancements
 
 - [ ] Multi-face tracking with individual emotion labels
